@@ -1,4 +1,4 @@
-package com.dev.pocrabbitmqstockms.application.connections;
+package com.dev.pocrabbitmqstockms.adapters.amqp.config;
 
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;
