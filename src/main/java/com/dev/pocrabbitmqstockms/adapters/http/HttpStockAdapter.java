@@ -22,7 +22,6 @@ class HttpStockAdapter {
 
     @PutMapping
     private ResponseEntity updateStock(@RequestBody StockSerializer stock) {
-        System.out.println(stock.getStockId());
         this.amqpPort.notifyUpdateStock(QUEUE_STOCK, stock);
         return new ResponseEntity(HttpStatus.OK);
     }

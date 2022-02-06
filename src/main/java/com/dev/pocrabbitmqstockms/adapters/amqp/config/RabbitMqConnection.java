@@ -10,7 +10,7 @@ import javax.annotation.PostConstruct;
 
 
 @Component
-public class RabbitMqConnection {
+class RabbitMqConnection {
 
     private static final String EXCHANGE_NAME = "amq.direct";
     private static final String QUEUE_STOCK = "STOCK";
